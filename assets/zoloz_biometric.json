@@ -1,0 +1,26 @@
+{
+  "meta_info": [
+    "com.alipay.zoloz.zface.bean.GarfieldCherryMetaInfo"
+  ],
+  "local_services": [
+    {
+      "interface": "com.alipay.mobile.security.bio.service.local.rpc.BioRPCService",
+      "essential": true,
+      "class": "com.zoloz.builder.service.RpcServiceProxy",
+      "lazy": true
+    },
+    {
+      "interface": "com.alipay.mobile.security.bio.service.local.monitorlog.MonitorLogService",
+      "essential": true,
+      "class": "com.zoloz.builder.service.LogServiceProxy",
+      "lazy": true
+    },
+    {
+      "interface": "com.alipay.mobile.security.bio.service.local.apsecurity.ApSecurityService",
+      "essential": true,
+      "class": "com.zoloz.builder.service.DfpServiceProxy",
+      "lazy": true
+
+    }
+  ]
+}

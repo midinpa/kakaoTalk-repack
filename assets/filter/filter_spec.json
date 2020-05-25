@@ -1,0 +1,991 @@
+{
+    "version": "1.0",
+    "filters": [
+        {
+            "alias": "Original",
+            "adjustments": [
+                {
+                    "params": [],
+                    "module": "basic",
+                    "adjustmentId": "1"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "ORIGINAL"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "neutral-lut-1.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "NEUTRAL1"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "neutral-lut-2.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "NEUTRAL2"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "aq04.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_black_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "AQ04"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [
+                        "sharp",
+                        "0.5"
+                    ],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "so11.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "overlay"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "SO11"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "cl02.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_black_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "CL02"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "cl01.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "CL01"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "aq01.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "AQ01"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "re01.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "overlay"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "RE01"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "cl09.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "CL09"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "aq07.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "overlay"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "AQ07"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "re08.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "RE08"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "so01.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "SO01"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "v06.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "V06"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "cl10.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_black_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "CL10"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "g02.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "G02"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "aq10.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "overlay"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "AQ10"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "aq09.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "AQ09"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "bw02.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "BW02"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "cl07.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "softlight"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "CL07"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "g03.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "G03"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "re05.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                },
+                {
+                    "params": [
+                        "source",
+                        "vignette_brown_rect.png",
+                        "mode",
+                        "overlay"
+                    ],
+                    "adjustmentId": "3",
+                    "module": "vignetteRect"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult",
+                        "3",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "RE05"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "so04.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "SO04"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "so05.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "SO05"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "bw09.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "BW09"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "po09.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "PO09"
+        },
+        {
+            "alias": "",
+            "adjustments": [
+                {
+                    "params": [],
+                    "adjustmentId": "1",
+                    "module": "unsharp"
+                },
+                {
+                    "params": [
+                        "lookup",
+                        "po10.png"
+                    ],
+                    "adjustmentId": "2",
+                    "module": "lookup512"
+                }
+            ],
+            "adjustmentChains": [
+                {
+                    "chainDepends": "",
+                    "adjustmentRef": [
+                        "1",
+                        "original",
+                        "2",
+                        "filteredResult"
+                    ],
+                    "chainId": "1"
+                }
+            ],
+            "filterId": "PO10"
+        }
+    ]
+}

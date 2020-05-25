@@ -1,0 +1,93 @@
+.class public final Lcom/kakao/talk/eventbus/event/MelonTicketEvent$Companion;
+.super Ljava/lang/Object;
+.source "MelonTicketEvent.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kakao/talk/eventbus/event/MelonTicketEvent;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008#\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\'"
+    }
+    d2 = {
+        "Lcom/kakao/talk/eventbus/event/MelonTicketEvent$Companion;",
+        "",
+        "()V",
+        "MELONTICKET_ACTION_SLIDE_CLICK_DELETE",
+        "",
+        "MELONTICKET_ACTION_SLIDE_CLICK_LISTEN",
+        "MELONTICKET_ACTION_SLIDE_CLICK_PICK",
+        "MELONTICKET_ACTION_SLIDE_CLICK_PLAY_MELON",
+        "MELONTICKET_ACTION_SLIDE_CLICK_SHARE_LISTEN",
+        "MELONTICKET_ACTION_SLIDE_UPDATE",
+        "MELONTICKET_ALBUM_ART_EVENT",
+        "MELONTICKET_BOTTOM_SLIDE_CALLBACK",
+        "MELONTICKET_COMPLETION_EVENT",
+        "MELONTICKET_CONFIRM_CLICK",
+        "MELONTICKET_DELETE_ALL_COMPLETION_EVENT",
+        "MELONTICKET_DELETE_PROCESS",
+        "MELONTICKET_DIALOG_CLICK_ITEM",
+        "MELONTICKET_HIDE_ALL_APP_LAYER",
+        "MELONTICKET_LIST_ITEM_MOVED",
+        "MELONTICKET_LYRICS_DETAIL_CLOSE",
+        "MELONTICKET_LYRICS_LOAD_COMPLETE",
+        "MELONTICKET_PICKER_COMPLETE",
+        "MELONTICKET_PLAYLIST_CLOSE",
+        "MELONTICKET_PLAYLIST_OPEN",
+        "MELONTICKET_PLAY_ALL_ARCHIVE_ITEMS",
+        "MELONTICKET_PREPARED_EVENT",
+        "MELONTICKET_PROFILE_UPDATED",
+        "MELONTICKET_REGIST_SMS_RECEIVER",
+        "MELONTICKET_REMOVE_ARCHIVE_ITEM",
+        "MELONTICKET_SELECT_ALL_ARCHIVE_ITEMS",
+        "MELONTICKET_SHOW_PATH_STATUS_POPUP_EVENT",
+        "MELONTICKET_STATUS_EVENT",
+        "MELONTICKET_STOP_EVENT",
+        "MELONTICKET_UNAVAILABLE_SOURCE_EVENT",
+        "MELONTICKET_UNREGIST_SMS_RECEIVER",
+        "MELONTICKET_WEB_CLOSE",
+        "MELONTICKET_WEB_CLOSE_ALL",
+        "MELONTICKET_WEB_NEW_WINDOW",
+        "NONE",
+        "app_googleRealRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x1,
+        0x10
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/iap/ac/android/r9/j;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Lcom/kakao/talk/eventbus/event/MelonTicketEvent$Companion;-><init>()V
+
+    return-void
+.end method

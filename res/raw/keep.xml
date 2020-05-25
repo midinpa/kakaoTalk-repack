@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/nf_*,@layout/nfilter_*,
+        @drawable/kakaopay_*,@layout/kakaopay_*,
+        @drawable/kakaomoney_*,@layout/kakaomoney_*,
+        @drawable/kakaocert_*,@layout/kakaocert_*,
+        @drawable/pay_*,@color/pay_*,@layout/pay_*,
+        @drawable/kakaopay_password_keypad_*,
+        @drawable/terms603_*,
+        @drawable/pay_setting_*_icon_selector,@drawable/pay_setting_*_icon,
+        @drawable/sym_*,
+        @drawable/cover_bg*,
+        @drawable/es_*,
+        @drawable/post_list_small_item_schedule_top_background,
+        @color/j20121212_*,@drawable/j20121212_*,
+        @layout/layout_for_dday_*,
+        @layout/list_ico_check_on_disable,
+        @drawable/profile_dday_number_*_*" />

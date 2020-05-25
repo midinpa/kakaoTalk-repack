@@ -1,0 +1,119 @@
+.class public final Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity$pickPhoto$3;
+.super Lcom/kakao/talk/widget/dialog/MenuItem;
+.source "PreMultiChatRoomInformationActivity.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;->z3()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0014\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "com/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity$pickPhoto$3",
+        "Lcom/kakao/talk/widget/dialog/MenuItem;",
+        "onClick",
+        "",
+        "app_googleRealRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x1,
+        0x10
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;
+
+
+# direct methods
+.method public constructor <init>(Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity$pickPhoto$3;->a:Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;
+
+    invoke-direct {p0, p2}, Lcom/kakao/talk/widget/dialog/MenuItem;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick()V
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/kakao/talk/tracker/Track;->C028:Lcom/kakao/talk/tracker/Track;
+
+    const/16 v1, 0xa
+
+    invoke-virtual {v0, v1}, Lcom/kakao/talk/tracker/Track;->action(I)Lcom/kakao/talk/singleton/Tracker$TrackerBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kakao/talk/singleton/Tracker$TrackerBuilder;->d()V
+
+    .line 2
+    sget-object v0, Lcom/kakao/talk/application/AppHelper;->b:Lcom/kakao/talk/application/AppHelper;
+
+    const-wide/16 v1, 0x0
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/kakao/talk/application/AppHelper;->a(Lcom/kakao/talk/application/AppHelper;JILjava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity$pickPhoto$3;->a:Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;
+
+    invoke-static {v0}, Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;->d(Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;)Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/kakao/talk/util/IntentUtils;->b(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    .line 4
+    iget-object v1, p0, Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity$pickPhoto$3;->a:Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;
+
+    invoke-static {v1}, Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;->d(Lcom/kakao/talk/activity/chatroom/setting/PreMultiChatRoomInformationActivity;)Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    const/16 v2, 0xce
+
+    invoke-virtual {v1, v0, v2}, Landroidx/fragment/app/FragmentActivity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    return-void
+.end method

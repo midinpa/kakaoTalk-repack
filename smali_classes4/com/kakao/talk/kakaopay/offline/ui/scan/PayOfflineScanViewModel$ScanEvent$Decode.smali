@@ -1,0 +1,144 @@
+.class public final Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;
+.super Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent;
+.source "PayOfflineScanViewModel.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Decode"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u000f"
+    }
+    d2 = {
+        "Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;",
+        "Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent;",
+        "item",
+        "Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;",
+        "text",
+        "",
+        "bitmap",
+        "Lcom/google/zxing/BinaryBitmap;",
+        "(Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;Ljava/lang/String;Lcom/google/zxing/BinaryBitmap;)V",
+        "getBitmap",
+        "()Lcom/google/zxing/BinaryBitmap;",
+        "getItem",
+        "()Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;",
+        "getText",
+        "()Ljava/lang/String;",
+        "app_googleRealRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x1,
+        0x10
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final b:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final c:Lcom/google/zxing/BinaryBitmap;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;Ljava/lang/String;Lcom/google/zxing/BinaryBitmap;)V
+    .locals 1
+    .param p1    # Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/google/zxing/BinaryBitmap;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "item"
+
+    invoke-static {p1, v0}, Lcom/iap/ac/android/r9/p;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "text"
+
+    invoke-static {p2, v0}, Lcom/iap/ac/android/r9/p;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "bitmap"
+
+    invoke-static {p3, v0}, Lcom/iap/ac/android/r9/p;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, v0}, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent;-><init>(Lcom/iap/ac/android/r9/j;)V
+
+    iput-object p1, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->a:Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;
+
+    iput-object p2, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->c:Lcom/google/zxing/BinaryBitmap;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/google/zxing/BinaryBitmap;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->c:Lcom/google/zxing/BinaryBitmap;
+
+    return-object v0
+.end method
+
+.method public final b()Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->a:Lcom/kakao/talk/activity/qrcode/item/QRCodeItem;
+
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/kakao/talk/kakaopay/offline/ui/scan/PayOfflineScanViewModel$ScanEvent$Decode;->b:Ljava/lang/String;
+
+    return-object v0
+.end method

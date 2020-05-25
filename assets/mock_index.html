@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Zoloz Mocker</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
+  <link href="https://gw.alipayobjects.com/os/rmsportal/ZNUYMegpOHiPNYitQGZm.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- <link href="css/jsoneditor.css" type="text/css" rel="stylesheet" media="screen,projection" /> -->
+  <link href="https://gw.alipayobjects.com/os/rmsportal/CJiuAGkVJOvZzNzZhEtC.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    .full-width {
+      width: 100%;
+    }
+
+    .full-height {
+      height: 100%;
+    }
+
+    header {
+      top: 0px;
+      width: 100%;
+    }
+
+    main,
+    footer,
+    .nav-content {
+      padding-left: 300px;
+    }
+
+    .navbar-fixed {
+      height: 112px;
+    }
+
+    main {
+      height: calc(100% - 112px);
+    }
+
+    @media only screen and (max-width: 992px) {
+      .dark-primary-color {
+        background: #1976D2;
+      }
+
+      .default-primary-color {
+        background: #2196F3;
+      }
+
+      .light-primary-color {
+        background: #BBDEFB;
+      }
+
+      .text-primary-color {
+        color: #FFFFFF;
+      }
+
+      .accent-color {
+        background: #536DFE;
+      }
+
+      .primary-text-color {
+        color: #212121;
+      }
+
+      .secondary-text-color {
+        color: #757575;
+      }
+
+      .divider-color {
+        border-color: #BDBDBD;
+      }
+
+      header,
+      main,
+      footer {
+        padding-left: 0
+      }
+
+      h5>span {
+        display: block;
+        margin: 0 0 15px 0
+      }
+    }
+
+    .tabs .tab a,
+    .tabs .indicator {
+      color: #bfe0fa;
+    }
+
+    .tabs .indicator {
+      height: 3px;
+      background-color: #88c5f7;
+    }
+
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+      color: white;
+    }
+
+    .collection a.collection-item {
+      color: #212121;
+    }
+
+    .collection .collection-item.active {
+      background-color: #ff9800;
+      color: white;
+    }
+
+    div.jsoneditor {
+      border: none;
+    }
+
+    .truncate-left {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+      direction: rtl;
+    }
+
+    .active>.collapsible-header {
+      color: white !important;
+      background-color: #3883fa !important;
+    }
+
+    .nav-extended {
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+
+    .sidenav {
+      margin-top: 112px;
+      height: 100%;
+      height: calc(100% + 60px);
+      height: -moz-calc(100%);
+      padding-bottom: 272px;
+      border-top: none;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      z-index: 200;
+    }
+
+    .sidenav-overlay {
+      z-index: 100;
+    }
+
+    .sidenav ul>a {
+      font-size: 0.8em;
+    }
+
+    .sidenav>li:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0 !important;
+    }
+
+    .add-new-mock {
+      font-weight: bold;
+    }
+
+    .new-mock>.badge {
+      margin-top: 0px !important;
+    }
+
+    .sidenav li>ul>a>i.material-icons {
+      height: unset !important;
+      line-height: unset !important;
+    }
+
+    li.active>a>i.material-icons,
+    li.active>a>.badge {
+      color: white !important;
+    }
+
+    li.active .hide-when-active {
+      display: none;
+    }
+
+    li:not(.active) .show-when-active {
+      display: none;
+    }
+
+    .has-modification {
+      font-weight: 900;
+      font-size: 1.4em;
+      color: orange;
+    }
+
+    .preloader-wrapper.large {
+      width: 120px;
+      height: 120px;
+    }
+
+    .modal-loading {
+      position: fixed;
+      z-index: 999;
+      padding: 40px;
+      top: calc(50% - 100px) !important;
+      height: 200px;
+      overflow: hidden;
+      width: 200px;
+      background: white;
+      display: none;
+      will-change: opacity;
+    }
+
+    .about {
+      color: #9e9e9e !important;
+    }
+  </style>
+</head>
+
+<body class="full-height">
+  <header>
+    <div class="navbar-fixed">
+      <nav class="nav-extended blue" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" class="brand-logo truncate-left">Zoloz Mocker</a>
+          <ul class="right ">
+            <li>
+              <a id="action-mock" style="display:none" class="waves-effect waves-ripple">Mock</a></li>
+            <li>
+              <a id="action-cancel" style="display:none" class="waves-effect waves-ripple">Cancel</a></li>
+          </ul>
+
+          <ul id="slide-out" class="sidenav sidenav-fixed collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect waves-ripple">Records
+                <i class="material-icons hide-when-active">chevron_right</i>
+                <i class="material-icons show-when-active">expand_more</i>
+                <span id="badge-menu-record" class="badge orange-text"></span>
+                <i id="clear-records" class="material-icons right hidden" style="margin-right:0px;">delete_sweep</i>
+              </a>
+
+              <ul class="collapsible-body collection" id="record-list"></ul>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect waves-ripple">Mocked Requests
+                <i class="material-icons hide-when-active">chevron_right</i>
+                <i class="material-icons show-when-active">expand_more</i>
+                <span id="badge-menu-requests" class="badge orange-text"></span>
+              </a>
+
+              <ul class="collapsible-body collection" id="mocked-request-list"> </ul>
+            </li>
+            <li>
+
+              <a class="collapsible-header waves-effect waves-ripple">Mocked Responses
+                <i class="material-icons hide-when-active">chevron_right</i>
+                <i class="material-icons show-when-active">expand_more</i>
+                <span id="badge-menu-responses" class="badge orange-text"></span>
+              </a>
+
+              <ul class="collapsible-body collection" id="mocked-response-list"> </ul>
+            </li>
+          </ul>
+
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+
+        <div class="nav-content">
+          <ul class="tabs transparent">
+            <li class="tab transparent"><a href="#tab-record" class="waves-effect waves-ripple">Record</a></li>
+            <li class="tab transparent">
+              <a href="#tab-mock-request" target-name="request" class="waves-effect waves-ripple">
+                <span> Mocked Request</span>
+                <strong class="has-modification" style="display: none;">*</strong>
+              </a>
+            </li>
+            <li class="tab transparent">
+              <a href="#tab-mock-response" target-name="response" class="waves-effect waves-ripple">
+                <span> Mocked Response</span>
+                <strong class="has-modification" style="display: none;">*</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="json-editor" class="json-editor full-width full-height">
+    </div>
+  </main>
+
+  <!-- Modal Structure -->
+  <div id="modal-message" class="modal">
+    <div class="modal-content">
+      <h4 id="ajax-result-header"></h4>
+      <p id="ajax-result-messge"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="javascript:window.location.reload(true)" class="modal-close waves-effect waves-green btn-flat orange white-text"> OK </a>
+    </div>
+  </div>
+
+  <div id="modal-loader" class="modal modal-loading">
+    <div class="preloader-wrapper large active center">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+  <script src="https://gw.alipayobjects.com/os/rmsportal/tlVbXuBDMscrnNhTRJpe.js"></script>
+  <!-- <script src="js/materialize.js"></script> -->
+  <script src="https://gw.alipayobjects.com/os/rmsportal/qVrKmuPQNkFltYSMumAI.js"></script>
+  <!-- <script src="js/jsoneditor.js"></script> -->
+  <script src="https://gw.alipayobjects.com/os/rmsportal/XUfZRIyhVdJaFsBIeCzu.js"></script>
+  <script src="js/biz.js"></script>
+</body>
+
+</html>

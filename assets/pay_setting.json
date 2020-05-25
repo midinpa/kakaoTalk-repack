@@ -1,0 +1,463 @@
+{
+  "sub_list": {
+    "MY_INFO": {
+      "groups": [
+        {
+          "items": [
+            {
+              "item_id": "my_info_talk_profile",
+              "detail": {
+                "style": "talk_profile"
+              }
+            },
+            {
+              "item_id": "my_info_name",
+              "title": "이름",
+              "detail": {
+                "style": "right_text",
+                "arrow_style": "none",
+                "text": "-"
+              }
+            },
+            {
+              "item_id": "my_info_birthday",
+              "title": "생년월일",
+              "detail": {
+                "style": "right_text",
+                "arrow_style": "none",
+                "text": "9999.12.31"
+              }
+            },
+            {
+              "item_id": "my_info_phone_no",
+              "title": "휴대전화번호",
+              "detail": {
+                "style": "right_text",
+                "arrow_style": "none",
+                "text": "010-0000-0000"
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "item_id": "my_info_change",
+              "title": "내 정보 변경하기",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        },
+        {
+          "bottom": {
+            "text": "개인정보 이용내역 확인하기",
+            "text_link": "https://kakaopay-more.kakao.com/apps/more/setting#/pi/history"
+          }
+        }
+      ]
+    },
+    "MONEY_QR": {
+      "action_url": "settings://setting/money_qr"
+    },
+    "SEND_PLAN": {
+      "action_url": "settings://setting/money_schedule"
+    },
+    "TOTAL_TRANSACTIONS": {
+      "action_url": "settings://home/pay_history"
+    },
+    "PASSWORD_CHANGE": {
+      "groups": [
+        {
+          "items": [
+            {
+              "item_id": "kakaopay_password_change",
+              "title": "카카오페이 비밀번호",
+              "detail": {
+                "style": "bottom_text",
+                "arrow_style": "to_right",
+                "text": "카드/카카오페이머니 결제, 송금"
+              }
+            },
+            {
+              "item_id": "kakaocert_password_change",
+              "title": "인증 비밀번호",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "fido_option",
+              "title": "지문인증 사용",
+              "detail": {
+                "style": "switch",
+                "arrow_style": "none"
+              }
+            },
+            {
+              "item_id": "face_pay_option",
+              "title": "얼굴인식 사용",
+              "detail": {
+                "style": "switch",
+                "arrow_style": "none"
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "item_id": "pay_lost_password",
+              "title": "비밀번호가 기억나지 않아요",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "KAKAOPAY": {
+      "action_url": "settings://setting/kakaopay"
+    },
+    "KAKAOPAY_HOME": {
+      "action_url": "settings://setting/kakaopay_home"
+    },
+    "MONEY_CARD": {
+      "action_url": "settings://setting/moneycard",
+      "groups": [
+        {
+          "items": [
+            {
+              "item_id": "moneycard_payment_history",
+              "title": "카드 이용내역",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_bill",
+              "title": "카드 명세서",
+              "detail": {
+                "style": "right_status_text",
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_mileage",
+              "title": "마일리지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_account",
+              "title": "카드 주소정보 관리",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_password",
+              "title": "카드 비밀번호 변경",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "item_id": "moneycard_pause",
+              "title": "일시정지",
+              "detail": {
+                "style": "switch",
+                "arrow_style": "none",
+                "alert_text": "카드를 분실했는 지 확실하지 않을 때, 일시정지 기능을 이용해보세요. 터치 한 번으로 간편하게 결제를 막을 수 있어요."
+              }
+            },
+            {
+              "item_id": "moneycard_lost",
+              "title": "분실신고/해제",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_reissue",
+              "title": "카드 재발급",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "item_id": "moneycard_guide",
+              "title": "카드 혜택/가이드",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "moneycard_atm",
+              "title": "출금 가능 ATM 찾기",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "item_id": "moneycard_unregister",
+              "title": "카드 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AUTOPAY": {
+      "action_url": "settings://setting/autopay"
+    },
+    "PAY_MOBILE": {
+      "action_url": "settings://setting/mobile"
+    },
+    "BANK_ACCOUNT": {
+      "action_url": "settings://setting/money"
+    },
+    "CUSTOM_CHARGE": {
+      "action_url": "settings://setting/custom_charge"
+    },
+    "BARCODE": {
+      "action_url": "settings://home/barcode"
+    },
+    "BILLGATES": {
+      "action_url": "settings://home/billgates"
+    },
+    "KAKAOCERT": {
+      "action_url": "settings://home/cert"
+    },
+    "UNREGISTER": {
+      "groups": [
+        {
+          "header_center": {
+            "text": "사용 중인 서비스를 모두 해지한 후\n탈퇴할 수 있습니다."
+          }
+        },
+        {
+          "items": [
+            {
+              "item_id": "autopay_unregister",
+              "title": "카드 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "banking_unregister",
+              "title": "페이머니 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "barcode_unregister",
+              "title": "멤버십 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "billgates_unregister",
+              "title": "청구서 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "finance_unregister",
+              "title": "투자 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "kakaocert_unregister",
+              "title": "인증 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "delivery_unregister",
+              "title": "배송 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "receipt_unregister",
+              "title": "영수증 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            },
+            {
+              "item_id": "kcb_css_unregister",
+              "title": "신용조회 서비스 해지",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ALL_UNREGISTER": {
+      "groups": [
+        {
+          "header_center": {
+            "text": "모든 서비스가 해지되었습니다.\n이제 카카오페이 탈퇴가 가능합니다."
+          }
+        },
+        {
+          "items": [
+            {
+              "item_id": "payservice_unregister",
+              "title": "카카오페이 탈퇴하기",
+              "detail": {
+                "arrow_style": "to_right"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "NOTICE": {
+      "action_url": "https://kakaopay-more.kakao.com/apps/more/setting#/notice"
+    },
+    "ASK": {
+      "action_url": "https://kakaopay-more.kakao.com/apps/more/setting#/qna"
+    },
+    "REPORT": {
+      "action_url": "https://kakaopay-more.kakao.com/settings/cs"
+    },
+    "TERMS": {
+      "action_url": "https://kakaopay-more.kakao.com/apps/more/setting#/terms_policy"
+    },
+    "kakaopay_password": {
+      "groups": [
+        {
+          "items": [
+            {
+              "item_id": "kakaopay_password_change",
+              "title": "비밀번호 변경"
+            },
+            {
+              "item_id": "fido_option",
+              "title": "지문옵션",
+              "detail": {
+                "style": "switch",
+                "arrow_style": "none"
+              }
+            }
+          ],
+          "bottom": {
+            "text": "카카오페이 비밀번호와 별개로 카드 간편결제 비밀번호는 카드 결제시에 사용되는 비밀번호이며 카드 간편결제 메뉴에서 변경 가능합니다."
+          }
+        }
+      ]
+    },
+    "pay_lost_password": {
+      "action_url": "settings://pwd/lost_password"
+    },
+    "my_info_change": {
+      "action_url": "https://kakaopay-more.kakao.com/auth/auth-form?type=M"
+    },
+    "kakaopay_password_change": {
+      //      "action_url": "https://kakaopay-more.kakao.com/pwd/change"
+      "action_url": "settings://pwd_change/kakaopay"
+    },
+    //    "card_pay_password": {
+    //      "action_url": "settings://pwd_change/kakaopay_card"
+    //    },
+    "autopay_unregister": {
+      "action_url": "settings://unregister/autopay"
+    },
+    "banking_receipt": {
+      "action_url": "https://dkpg-web.payments.kakao.com/dkpg/v1/cash_receipt_info_init_native"
+    },
+    "banking_unregister": {
+      "action_url": "settings://unregister/money"
+    },
+    "barcode_unregister": {
+      "action_url": "settings://unregister/barcode"
+    },
+    "billgates_unregister": {
+      "action_url": "settings://unregister/billgates"
+    },
+    "kakaocert_password_change": {
+      "action_url": "settings://pwd_change/cert"
+    },
+    "kakaocert_unregister": {
+      "action_url": "settings://unregister/cert"
+    },
+    "moneycard_payment_history": {
+      "action_url": "settings://moneycard/payment_history"
+    },
+    "moneycard_mileage": {
+      "action_url": "settings://moneycard/mileage"
+    },
+    "moneycard_account": {
+      "action_url": "settings://moneycard/account"
+    },
+    "moneycard_password": {
+      "action_url": "settings://moneycard/password"
+    },
+    "moneycard_bill": {
+      "action_url": "settings://moneycard/bill"
+    },
+    "moneycard_pause": {
+      "action_url": "settings://moneycard/pause"
+    },
+    "moneycard_lost": {
+      "action_url": "settings://moneycard/lost"
+    },
+    "moneycard_reissue": {
+      "action_url": "settings://moneycard/reissue"
+    },
+    "moneycard_guide": {
+      "action_url": "settings://moneycard/guide"
+    },
+    "moneycard_atm": {
+      "action_url": "settings://moneycard/atm"
+    },
+    "moneycard_unregister": {
+      "action_url": "settings://moneycard/unregister"
+    },
+    "payservice_unregister": {
+      "action_url": "settings://unregister/payservice"
+    },
+    "finance_unregister": {
+      "action_url": "settings://unregister/finance"
+    },
+    "delivery_unregister": {
+      "action_url": "settings://unregister/delivery"
+    },
+    "receipt_unregister": {
+      "action_url": "settings://unregister/receipt"
+    },
+    "kcb_css_unregister": {
+      "action_url": "settings://unregister/kcb_css"
+    }
+  }
+}

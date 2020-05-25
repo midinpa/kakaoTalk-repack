@@ -1,0 +1,89 @@
+.class public final Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;
+.super Ljava/lang/Object;
+.source "PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory.java"
+
+# interfaces
+.implements Lcom/iap/ac/android/u6/c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/iap/ac/android/u6/c<",
+        "Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;
+
+
+# direct methods
+.method public constructor <init>(Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;->a:Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;
+
+    return-void
+.end method
+
+.method public static a(Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;)Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;
+
+    invoke-direct {v0, p0}, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;-><init>(Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;)V
+
+    return-object v0
+.end method
+
+.method public static b(Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;)Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;->b()Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+
+    move-result-object p0
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, v0}, Lcom/iap/ac/android/u6/e;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast p0, Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public get()Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;->a:Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;
+
+    invoke-static {v0}, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;->b(Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule;)Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/kakao/talk/kakaopay/requirements/v2/di/onewonauth/PayOneWonAuthDataSourceModule_GetOneWonAuthApiServiceFactory;->get()Lcom/kakaopay/shared/money/v1/onewonauth/data/PayOneWonAuthDataSource;
+
+    move-result-object v0
+
+    return-object v0
+.end method

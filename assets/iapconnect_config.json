@@ -1,0 +1,20 @@
+{
+  "acconfig": {
+    "basicConfigs": {
+      "OAUTH_CONFIG": "{\"authClientId\":\"\",\"clientId\":\"\",\"scopes\":[\"BASE_USER_INFO\"]}"
+    },
+    "cpmConfigs": {
+      "CODETYPE_CONFIG": "[{\"clientIndexValidHours\":360,\"clientOtpSeedValidHours\":72,\"clientPublicKey\":\"\",\"codeIssuer\":\"666\",\"codeType\":\"AC19\",\"decodeWindowLeft\":-60,\"decodeWindowRight\":30,\"encodeFrequency\":30,\"encodeNum\":3,\"onlineCode\":true,\"otpGenerateInterval\":3}]",
+      "REGION_CODETYPE_MAPPING": "[{\"codeTypes\":[\"AC19\"],\"region\":\"NL\"},{\"codeTypes\":[\"AC19\"],\"region\":\"FR\"},{\"codeTypes\":[\"AC19\"],\"region\":\"MY\"},{\"codeTypes\":[\"AC19\"],\"region\":\"GB\"},{\"codeTypes\":[\"AC19\"],\"region\":\"CN\"},{\"codeTypes\":[\"AC19\"],\"region\":\"ID\"},{\"codeTypes\":[\"AC19\"],\"region\":\"IT\"},{\"codeTypes\":[\"AC19\"],\"region\":\"PH\"},{\"codeTypes\":[\"AC19\"],\"region\":\"JP\"},{\"codeTypes\":[\"AC19\"],\"region\":\"MO\"},{\"codeTypes\":[\"AC19\"],\"region\":\"DE\"}]"
+
+    },
+    "errorActions": {},
+    "extendInfo": {},
+    "mpmConfigs": {
+      "HOOK_URL_CONFIG": "[]"
+    }
+  },
+  "siteName": "KAKAOPAY",
+  "acsAppId": "2102000024800001",
+  "appId": "KAKAOPAY_WALLET_KR"
+}

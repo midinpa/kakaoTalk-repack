@@ -1,0 +1,71 @@
+[
+  {
+    "name": "scan",
+    "json": "scan_progress",
+    "index": "scan",
+    "repeat": true,
+    "next": [
+      {
+        "status": "lift_phone",
+        "aim": "lift_up"
+      },
+      {
+        "status": "processing",
+        "aim": "process"
+      },
+      {
+        "status": "scan",
+        "aim": "scan"
+      },
+      {
+        "status": "none",
+        "aim": "success"
+      }
+    ]
+  },
+  {
+    "name": "lift_up",
+    "json": "lift_up",
+    "index": "lift_phone",
+    "repeat": true,
+    "next": [
+      {
+        "status": "scan",
+        "aim": "scan"
+      },
+      {
+        "status": "processing",
+        "aim": "process"
+      },
+      {
+        "status": "success",
+        "aim": "success"
+      },
+      {
+        "status": "lift_phone",
+        "aim": "lift_up"
+      }
+    ]
+  },
+  {
+    "name": "process",
+    "json": "scan_progress",
+    "index": "processing",
+    "repeat": true,
+    "next": [
+      {
+        "status": "none",
+        "aim": "success"
+      },
+      {
+        "status": "processing",
+        "aim": "process"
+      }
+    ]
+  },
+  {
+    "name": "success",
+    "json": "success",
+    "index": "success"
+  }
+]

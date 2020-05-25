@@ -1,0 +1,72 @@
+.class public final Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs$3;
+.super Lcom/kakao/talk/widget/dialog/MenuItem;
+.source "OpenLinkDialogs.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs;->a(Landroidx/fragment/app/FragmentActivity;Lcom/kakao/talk/openlink/db/model/OpenLink;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Landroidx/fragment/app/FragmentActivity;
+
+.field public final synthetic b:Lcom/kakao/talk/openlink/db/model/OpenLink;
+
+
+# direct methods
+.method public constructor <init>(ILandroidx/fragment/app/FragmentActivity;Lcom/kakao/talk/openlink/db/model/OpenLink;)V
+    .locals 0
+
+    .line 1
+    iput-object p2, p0, Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs$3;->a:Landroidx/fragment/app/FragmentActivity;
+
+    iput-object p3, p0, Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs$3;->b:Lcom/kakao/talk/openlink/db/model/OpenLink;
+
+    invoke-direct {p0, p1}, Lcom/kakao/talk/widget/dialog/MenuItem;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick()V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/kakao/talk/tracker/Track;->A030:Lcom/kakao/talk/tracker/Track;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/kakao/talk/tracker/Track;->action(I)Lcom/kakao/talk/singleton/Tracker$TrackerBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kakao/talk/singleton/Tracker$TrackerBuilder;->d()V
+
+    .line 2
+    sget-object v0, Lcom/kakao/talk/util/PlatformUtils;->e:Lcom/kakao/talk/util/PlatformUtils;
+
+    iget-object v1, p0, Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs$3;->a:Landroidx/fragment/app/FragmentActivity;
+
+    iget-object v2, p0, Lcom/kakao/talk/openlink/dialog/OpenLinkDialogs$3;->b:Lcom/kakao/talk/openlink/db/model/OpenLink;
+
+    invoke-virtual {v2}, Lcom/kakao/talk/openlink/db/model/OpenLink;->o()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kakao/talk/util/PlatformUtils;->a(Landroid/content/Context;Ljava/lang/CharSequence;)V
+
+    const v0, 0x7f111cd0
+
+    .line 3
+    invoke-static {v0}, Lcom/kakao/talk/widget/dialog/ToastUtil;->show(I)V
+
+    return-void
+.end method

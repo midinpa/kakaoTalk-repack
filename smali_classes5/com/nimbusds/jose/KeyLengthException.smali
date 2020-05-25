@@ -1,0 +1,140 @@
+.class public Lcom/nimbusds/jose/KeyLengthException;
+.super Lcom/nimbusds/jose/KeyException;
+.source "KeyLengthException.java"
+
+
+# instance fields
+.field public final alg:Lcom/nimbusds/jose/Algorithm;
+
+.field public final expectedLength:I
+
+
+# direct methods
+.method public constructor <init>(ILcom/nimbusds/jose/Algorithm;)V
+    .locals 3
+
+    .line 5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    if-lez p1, :cond_0
+
+    .line 6
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "The expected key length is "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " bits"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "Unexpected key length"
+
+    :goto_0
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    if-eqz p2, :cond_1
+
+    .line 7
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, " (for "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " algorithm)"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    :cond_1
+    const-string v1, ""
+
+    :goto_1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/nimbusds/jose/KeyException;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    iput p1, p0, Lcom/nimbusds/jose/KeyLengthException;->expectedLength:I
+
+    .line 9
+    iput-object p2, p0, Lcom/nimbusds/jose/KeyLengthException;->alg:Lcom/nimbusds/jose/Algorithm;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/nimbusds/jose/Algorithm;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-direct {p0, v0, p1}, Lcom/nimbusds/jose/KeyLengthException;-><init>(ILcom/nimbusds/jose/Algorithm;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/nimbusds/jose/KeyException;-><init>(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    .line 2
+    iput p1, p0, Lcom/nimbusds/jose/KeyLengthException;->expectedLength:I
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-object p1, p0, Lcom/nimbusds/jose/KeyLengthException;->alg:Lcom/nimbusds/jose/Algorithm;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getAlgorithm()Lcom/nimbusds/jose/Algorithm;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/nimbusds/jose/KeyLengthException;->alg:Lcom/nimbusds/jose/Algorithm;
+
+    return-object v0
+.end method
+
+.method public getExpectedKeyLength()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/nimbusds/jose/KeyLengthException;->expectedLength:I
+
+    return v0
+.end method
